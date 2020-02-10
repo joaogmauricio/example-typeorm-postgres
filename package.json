@@ -9,11 +9,12 @@
   "dependencies": {
     "@types/node": "^13.7.0",
     "pg": "^7.15.1",
-    "typeorm": "^0.2.21",
+    "typeorm": "^0.2.22",
     "express": "^4.17.1"
   },
   "scripts": {
     "build": "tsc",
+    "start": "node .",
     "dbseed": "npm run build && node dist/tasks/db/seed.js"
   }
 }
