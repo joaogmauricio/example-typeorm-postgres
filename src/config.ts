@@ -2,8 +2,6 @@
 
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
 
-import Appointment from './models/Appointment';
-import Doctor from './models/Doctor';
 import Patient from './models/Patient';
 
 const typeOrmConfig: PostgresConnectionOptions = {
@@ -16,8 +14,6 @@ const typeOrmConfig: PostgresConnectionOptions = {
     synchronize: true,
     logging: false,
     entities: [
-        Appointment,
-        Doctor,
         Patient
     ]
 };

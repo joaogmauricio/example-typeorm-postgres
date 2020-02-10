@@ -5,12 +5,8 @@ import {
     PrimaryGeneratedColumn
 } from 'typeorm';
 
-import Appointment from './Appointment';
-import Doctor from './Doctor';
-
 /**
- * The Patient model is one of the simple models in the example. It is the one side of its one-to-many relationship with
- * the Appointment model.
+ * The Patient model is one of the simple models in the example.
  */
 @Entity()
 export default class Patient {
@@ -19,10 +15,4 @@ export default class Patient {
 
     @Column()
     name: string;
-
-    @OneToMany(
-        type => Appointment,
-        appointment => appointment.patient
-    )
-    appointments: Appointment[];
 }

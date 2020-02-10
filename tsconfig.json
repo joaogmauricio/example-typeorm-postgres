@@ -2,7 +2,6 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es2018",
-        "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "dist",
@@ -14,10 +13,7 @@
             ]
         },
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "lib": [
-            "es6"
-        ]
+        "experimentalDecorators": true
     },
     "include": [
         "src/**/*"

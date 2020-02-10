@@ -7,8 +7,10 @@
     "typescript": "^3.7.3"
   },
   "dependencies": {
+    "@types/node": "^13.7.0",
     "pg": "^7.15.1",
-    "typeorm": "^0.2.21"
+    "typeorm": "^0.2.21",
+    "express": "^4.17.1"
   },
   "scripts": {
     "build": "tsc",
